@@ -1,0 +1,218 @@
+[
+    {
+        "id": 21,
+        "title": "Horror Book",
+        "description": "A chilling horror story.",
+        "price": "$14",
+        "category": "Horror",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.1
+    },
+    {
+        "id": 17,
+        "title": "Gardening Book",
+        "description": "Grow your own garden with expert tips.",
+        "price": "$17",
+        "category": "Hobby",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.2
+    },
+    {
+        "id": 14,
+        "title": "Cooking Book",
+        "description": "Delicious recipes for every occasion.",
+        "price": "$18",
+        "category": "Cooking",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 25,
+        "title": "Technology Book",
+        "description": "Latest trends in technology.",
+        "price": "$24",
+        "category": "Technology",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 2,
+        "title": "Poem Book",
+        "description": "A beautiful collection of poems that inspire and uplift the soul.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 6,
+        "title": "Children's Book",
+        "description": "A delightful children's book with colorful illustrations and fun stories.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.9
+    },
+    {
+        "id": 1,
+        "title": "Story Book",
+        "description": "A captivating story book that takes you on an adventure through the world of imagination.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 8,
+        "title": "Biography Book",
+        "description": "An inspiring biography of a remarkable individual.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.2
+    },
+    {
+        "id": 19,
+        "title": "Health Book",
+        "description": "A guide to healthy living.",
+        "price": "$21",
+        "category": "Health",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 13,
+        "title": "Travel Book",
+        "description": "Explore the world with this comprehensive travel guide.",
+        "price": "$20",
+        "category": "Travel",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.3
+    },
+    {
+        "id": 4,
+        "title": "History Book",
+        "description": "An insightful history book that delves into the events that shaped our world.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 3,
+        "title": "Science Fiction Book",
+        "description": "A thrilling science fiction book that explores the boundaries of technology and humanity.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 23,
+        "title": "Drama Book",
+        "description": "A dramatic tale of love and loss.",
+        "price": "$13",
+        "category": "Drama",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.2
+    },
+    {
+        "id": 7,
+        "title": "Adventure Book",
+        "description": "An exciting adventure book that takes you to new worlds.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.3
+    },
+    {
+        "id": 24,
+        "title": "Spiritual Book",
+        "description": "A journey into spirituality.",
+        "price": "$23",
+        "category": "Spiritual",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "title": "Mystery Book",
+        "description": "A gripping mystery book full of suspense and unexpected twists.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 16,
+        "title": "Photography Book",
+        "description": "Master the art of photography.",
+        "price": "$22",
+        "category": "Art",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.6
+    },
+    {
+        "id": 9,
+        "title": "Fantasy Book",
+        "description": "A magical fantasy book filled with mythical creatures and epic quests.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.7
+    },
+    {
+        "id": 20,
+        "title": "Romance Book",
+        "description": "A heartwarming romance novel.",
+        "price": "$16",
+        "category": "Romance",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.3
+    },
+    {
+        "id": 12,
+        "title": "Business Book",
+        "description": "A practical guide to modern business strategies.",
+        "price": "$15",
+        "category": "Business",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.1
+    },
+    {
+        "id": 22,
+        "title": "Comics Book",
+        "description": "A collection of popular comics.",
+        "price": "$12",
+        "category": "Comics",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.5
+    },
+    {
+        "id": 18,
+        "title": "Finance Book",
+        "description": "Manage your finances effectively.",
+        "price": "$19",
+        "category": "Finance",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.4
+    },
+    {
+        "id": 15,
+        "title": "Programming Book",
+        "description": "Learn programming from scratch.",
+        "price": "$25",
+        "category": "Education",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.8
+    },
+    {
+        "id": 11,
+        "title": "Food Book",
+        "description": "A delicious food book with recipes from around the world.",
+        "price": "$0",
+        "category": "Free",
+        "image": "/Img/Free-Book.jpg",
+        "rating": 4.6
+    }
+]
