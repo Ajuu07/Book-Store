@@ -1,12 +1,31 @@
-import React from "react";
-import list from "../data/list.json";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
+import axios from "axios";
 
 const FreeBook = () => {
-  const freeBooks = list.filter((book) => book.category === "Free");
+  const [books, setBooks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const getBooks = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/books");
+        setBooks(res.data);
+        setLoading(false);
+      } catch (err) {
+        console.error("Error fetching books:", err);
+        setError("Failed to load books. Please try again.");
+        setLoading(false);
+      }
+    };
+    getBooks();
+  }, []);
+
+  const freeBooks = books.filter((book) => book.category === "Free");
   const settings = {
     dots: true,
     infinite: false,
@@ -55,19 +74,27 @@ const FreeBook = () => {
         </p>
       </div>
       <div>
-        <Slider {...settings}>
-          {freeBooks.map((book) => (
-            <Cards
-              key={book.id}
-              id={book.id}
-              title={book.title}
-              image={book.image}
-              description={book.description}
-              category={book.category}
-              price={book.price}
-            />
-          ))}
-        </Slider>
+        {loading ? (
+          <p className="text-center">Loading...</p>
+        ) : error ? (
+          <p className="text-center text-red-500">{error}</p>
+        ) : freeBooks.length === 0 ? (
+          <p className="text-center">No free books available.</p>
+        ) : (
+          <Slider {...settings}>
+            {freeBooks.map((book) => (
+              <Cards
+                key={book._id}
+                id={book._id}
+                title={book.title}
+                image={book.image}
+                category={book.category}
+                description={book.description}
+                price={book.price}
+              />
+            ))}
+          </Slider>
+        )}
       </div>
     </div>
   );

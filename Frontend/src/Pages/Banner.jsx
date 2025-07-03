@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -19,13 +20,20 @@ const Banner = () => {
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <input
               type="email"
-              placeholder="Enter your email to login"
+              placeholder="📧 Enter your email to login"
               required
               className="input input-bordered w-full max-w-md text-black"
             />
-            <button className="btn btn-secondary w-full sm:w-auto">
-              Sign In
-            </button>
+
+            <Link
+              to="/signup"
+              className="btn btn-secondary w-full sm:w-auto"
+              onClick={() =>
+                document.getElementById("signup_modal").showModal()
+              }
+            >
+              Explore Now
+            </Link>
           </div>
         </div>
       </div>

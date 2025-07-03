@@ -2,217 +2,217 @@
     {
         "id": 21,
         "title": "Horror Book",
-        "description": "A chilling horror story.",
-        "price": "$14",
+        "price": "112",
         "category": "Horror",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.1
+        "rating": 4.1,
+        "description": "A thrilling horror book filled with suspense and chills."
     },
     {
         "id": 17,
         "title": "Gardening Book",
-        "description": "Grow your own garden with expert tips.",
-        "price": "$17",
+        "price": "134",
         "category": "Hobby",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.2
+        "rating": 4.2,
+        "description": "A comprehensive guide to gardening for all skill levels."
     },
     {
         "id": 14,
         "title": "Cooking Book",
-        "description": "Delicious recipes for every occasion.",
-        "price": "$18",
+        "price": "187",
         "category": "Cooking",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.5
+        "rating": 4.5,
+        "description": "Delicious recipes and cooking tips for home chefs."
     },
     {
         "id": 25,
         "title": "Technology Book",
-        "description": "Latest trends in technology.",
-        "price": "$24",
+        "price": "241",
         "category": "Technology",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.7
+        "rating": 4.7,
+        "description": "Explore the latest advancements in technology."
     },
     {
         "id": 2,
         "title": "Poem Book",
-        "description": "A beautiful collection of poems that inspire and uplift the soul.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.8
+        "rating": 4.8,
+        "description": "A collection of beautiful and inspiring poems."
     },
     {
         "id": 6,
         "title": "Children's Book",
-        "description": "A delightful children's book with colorful illustrations and fun stories.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.9
+        "rating": 4.9,
+        "description": "Fun and educational stories for children."
     },
     {
         "id": 1,
         "title": "Story Book",
-        "description": "A captivating story book that takes you on an adventure through the world of imagination.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.5
+        "rating": 4.5,
+        "description": "A collection of engaging and imaginative stories."
     },
     {
         "id": 8,
         "title": "Biography Book",
-        "description": "An inspiring biography of a remarkable individual.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.2
+        "rating": 4.2,
+        "description": "Inspiring biographies of notable individuals."
     },
     {
         "id": 19,
         "title": "Health Book",
-        "description": "A guide to healthy living.",
-        "price": "$21",
+        "price": "213",
         "category": "Health",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.7
+        "rating": 4.7,
+        "description": "Tips and advice for a healthy lifestyle."
     },
     {
         "id": 13,
         "title": "Travel Book",
-        "description": "Explore the world with this comprehensive travel guide.",
-        "price": "$20",
+        "price": "200",
         "category": "Travel",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.3
+        "rating": 4.3,
+        "description": "Discover amazing destinations around the world."
     },
     {
         "id": 4,
         "title": "History Book",
-        "description": "An insightful history book that delves into the events that shaped our world.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.6
+        "rating": 4.6,
+        "description": "Explore significant events and figures in history."
     },
     {
         "id": 3,
         "title": "Science Fiction Book",
-        "description": "A thrilling science fiction book that explores the boundaries of technology and humanity.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.7
+        "rating": 4.7,
+        "description": "Exciting science fiction adventures and tales."
     },
     {
         "id": 23,
         "title": "Drama Book",
-        "description": "A dramatic tale of love and loss.",
-        "price": "$13",
+        "price": "130",
         "category": "Drama",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.2
+        "rating": 4.2,
+        "description": "Dramatic stories filled with emotion and depth."
     },
     {
         "id": 7,
         "title": "Adventure Book",
-        "description": "An exciting adventure book that takes you to new worlds.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.3
+        "rating": 4.3,
+        "description": "Action-packed adventures for all ages."
     },
     {
         "id": 24,
         "title": "Spiritual Book",
-        "description": "A journey into spirituality.",
-        "price": "$23",
+        "price": "231",
         "category": "Spiritual",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.6
+        "rating": 4.6,
+        "description": "Insights and guidance on spiritual growth."
     },
     {
         "id": 5,
         "title": "Mystery Book",
-        "description": "A gripping mystery book full of suspense and unexpected twists.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.4
+        "rating": 4.4,
+        "description": "Intriguing mysteries to keep you guessing."
     },
     {
         "id": 16,
         "title": "Photography Book",
-        "description": "Master the art of photography.",
-        "price": "$22",
+        "price": "222",
         "category": "Art",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.6
+        "rating": 4.6,
+        "description": "A showcase of stunning photography and techniques."
     },
     {
         "id": 9,
         "title": "Fantasy Book",
-        "description": "A magical fantasy book filled with mythical creatures and epic quests.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.7
+        "rating": 4.7,
+        "description": "Magical worlds and fantastical adventures."
     },
     {
         "id": 20,
         "title": "Romance Book",
-        "description": "A heartwarming romance novel.",
-        "price": "$16",
+        "price": "160",
         "category": "Romance",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.3
+        "rating": 4.3,
+        "description": "Heartwarming romance stories."
     },
     {
         "id": 12,
         "title": "Business Book",
-        "description": "A practical guide to modern business strategies.",
-        "price": "$15",
+        "price": "151",
         "category": "Business",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.1
+        "rating": 4.1,
+        "description": "Strategies and insights for business success."
     },
     {
         "id": 22,
         "title": "Comics Book",
-        "description": "A collection of popular comics.",
-        "price": "$12",
+        "price": "120",
         "category": "Comics",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.5
+        "rating": 4.5,
+        "description": "A fun collection of comic stories."
     },
     {
         "id": 18,
         "title": "Finance Book",
-        "description": "Manage your finances effectively.",
-        "price": "$19",
+        "price": "191",
         "category": "Finance",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.4
+        "rating": 4.4,
+        "description": "Learn about finance and money management."
     },
     {
         "id": 15,
         "title": "Programming Book",
-        "description": "Learn programming from scratch.",
-        "price": "$25",
+        "price": "250",
         "category": "Education",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.8
+        "rating": 4.8,
+        "description": "Comprehensive guide to programming concepts."
     },
     {
         "id": 11,
         "title": "Food Book",
-        "description": "A delicious food book with recipes from around the world.",
-        "price": "$0",
+        "price": "0",
         "category": "Free",
         "image": "/Img/Free-Book.jpg",
-        "rating": 4.6
+        "rating": 4.6,
+        "description": "Explore a variety of cuisines and food cultures."
     }
 ]

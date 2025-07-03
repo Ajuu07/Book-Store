@@ -5,29 +5,28 @@ function Footer() {
   return (
     <div>
       <hr />
-      <footer className="footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white">
-        <nav className="grid grid-flow-col gap-4">
-          <Link to="/about" className="link link-hover cursor-pointer">
-            About Us
+      <footer className="footer footer-center p-6 md:p-10 text-base-content rounded dark:bg-slate-900 dark:text-white w-full">
+        <nav className="flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center">
+          <Link className="link link-hover" to="/about">
+            About us
           </Link>
-          <Link to="/contact" className="link link-hover cursor-pointer">
+          <Link className="link link-hover" to="/contact">
             Contact
           </Link>
-          <Link to="/jobs" className="link link-hover cursor-pointer">
+          <Link className="link link-hover" to="/jobs">
             Jobs
           </Link>
-          <Link to="/press" className="link link-hover cursor-pointer">
-            Press Kit
+          <Link className="link link-hover" to="/press-kit">
+            Press kit
           </Link>
         </nav>
-        <nav>
-          <div className="grid grid-flow-col gap-4">
+        <nav className="mt-4">
+          <div className="flex gap-4 justify-center">
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,11 +39,10 @@ function Footer() {
               </svg>
             </a>
             <a
-              href="https://youtube.com/"
+              href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,11 +55,10 @@ function Footer() {
               </svg>
             </a>
             <a
-              href="https://facebook.com/"
+              href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,11 +72,8 @@ function Footer() {
             </a>
           </div>
         </nav>
-        <aside>
-          <p>
-            Copyright © 2025 - All rights reserved by{" "}
-            <span className="font-semibold text-pink-400">Ajit Wadikar</span>
-          </p>
+        <aside className="mt-4">
+          <p>Copyright © 2025 - All right reserved by Ajit Wadikar</p>
         </aside>
       </footer>
     </div>

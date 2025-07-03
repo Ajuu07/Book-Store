@@ -1,153 +1,131 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from "react-hot-toast";
 
-function Signup() {
+const Signup = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    };
+    await axios
+      .post("http://localhost:4001/user/signup", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          toast.success("Signup Successfully");
+          navigate(from, { replace: true });
+        }
+        localStorage.setItem("Users", JSON.stringify(res.data.user));
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log(err);
+          toast.error("Error: " + err.response.data.message);
+        }
+      });
+  };
+
   return (
-    <>
-      <div className="flex h-screen items-center justify-center">
-        <div className=" w-[600px] ">
-          <div className="modal-box">
-            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <Link
-                to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-              >
-                ✕
-              </Link>
+    <dialog id="signup_modal" className="modal">
+      <div className="modal-box">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <Link
+            to="/"
+            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            onClick={() => document.getElementById("signup_modal").close()}
+          >
+            ✕
+          </Link>
 
-              <h3 className="font-bold text-lg">Signup</h3>
-              <div className="mt-4 space-y-2">
-                <div className="form-control mb-4">
-                  <label className="label">Enter Name</label>
-                  <input
-                    type="text"
-                    className="input input-bordered dark:bg-slate-700"
-                    placeholder="Enter your full name"
-                    {...register("name", { required: true })}
-                  />
-                  <br />
-                  {errors.name && (
-                    <span className="text-red-500 text-xs">
-                      {errors.name.message}
-                    </span>
-                  )}
-                </div>
+          <h3 className="font-bold text-lg">Signup</h3>
 
-                <div className="form-control mb-4">
-                  <label className="label">Enter Email</label>
-                  <input
-                    type="email"
-                    className="input input-bordered dark:bg-slate-700"
-                    placeholder="Enter your email"
-                    {...register("email", {
-                      required: true,
-                      pattern: {
-                        value: /^\S+@\S+$/i,
-                        message: "Invalid email address",
-                      },
-                    })}
-                  />
-                  <br />
-                  {errors.email && (
-                    <span className="text-red-500 text-xs">
-                      {errors.email.message}
-                    </span>
-                  )}
-                </div>
-
-                <div className="form-control mb-4">
-                  <label className="label">Enter Mobile Number</label>
-                  <input
-                    type="tel"
-                    className="input input-bordered dark:bg-slate-700"
-                    placeholder="Enter your mobile number"
-                    {...register("mobile", {
-                      required: true,
-                      pattern: {
-                        value: /^[0-9]{10,15}$/,
-                        message: "Invalid mobile number",
-                      },
-                    })}
-                  />
-                  <br />
-                  {errors.mobile && (
-                    <span className="text-red-500 text-xs">
-                      {errors.mobile.message}
-                    </span>
-                  )}
-                </div>
-
-                <div className="form-control mb-4">
-                  <label className="label">Password</label>
-                  <input
-                    type="password"
-                    className="input input-bordered dark:bg-slate-700"
-                    placeholder="Enter your password"
-                    {...register("password", {
-                      required: true,
-                      minLength: {
-                        value: 6,
-                        message: "Password must be at least 6 characters",
-                      },
-                    })}
-                  />
-                  <br />
-                  {errors.password && (
-                    <span className="text-red-500 text-xs">
-                      {errors.password.message}
-                    </span>
-                  )}
-                </div>
-
-                <div className="form-control mb-6">
-                  <label className="label">Confirm Password</label>
-                  <input
-                    type="password"
-                    className="input input-bordered dark:bg-slate-700"
-                    placeholder="Confirm your password"
-                    {...register("confirmPassword", {
-                      required: true,
-                      validate: (value) =>
-                        value === password || "Passwords do not match",
-                    })}
-                  />
-                  <br />
-                  {errors.confirmPassword && (
-                    <span className="text-red-500 text-xs">
-                      {errors.confirmPassword.message}
-                    </span>
-                  )}
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn bg-secondary text-white w-full hover:bg-secondary-dark transition duration-300"
-                >
-                  Signup
-                </button>
-
-                <p className="text-center mt-4 text-sm">
-                  Already have an account?{" "}
-                  <Link to="/login" className="text-blue-500 underline">
-                    Login
-                  </Link>
-                </p>
-              </div>
-            </form>
+          <div className="mt-4 space-y-2">
+            <span>Name</span>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your fullname"
+              className="w-80 px-3 py-1 border rounded-md outline-none"
+              {...register("fullname", { required: true })}
+            />
+            <br />
+            {errors.fullname && (
+              <span className="text-sm text-red-500">
+                This field is required
+              </span>
+            )}
           </div>
-        </div>
+
+          <div className="mt-4 space-y-2">
+            <span>Email</span>
+            <br />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-80 px-3 py-1 border rounded-md outline-none"
+              {...register("email", { required: true })}
+            />
+            <br />
+            {errors.email && (
+              <span className="text-sm text-red-500">
+                This field is required
+              </span>
+            )}
+          </div>
+
+          <div className="mt-4 space-y-2">
+            <span>Password</span>
+            <br />
+            <input
+              type="text"
+              placeholder="Enter your password"
+              className="w-80 px-3 py-1 border rounded-md outline-none"
+              {...register("password", { required: true })}
+            />
+            <br />
+            {errors.password && (
+              <span className="text-sm text-red-500">
+                This field is required
+              </span>
+            )}
+          </div>
+
+          <div className="flex justify-around mt-4">
+            <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
+              Signup
+            </button>
+            <p className="text-xl">
+              Have account?{" "}
+              <button
+                className="underline text-blue-500 cursor-pointer"
+                onClick={() => {
+                  document.getElementById("my_modal_3").showModal();
+                }}
+              >
+                Login
+              </button>{" "}
+              <Login />
+            </p>
+          </div>
+        </form>
       </div>
-    </>
+    </dialog>
   );
-}
+};
 
 export default Signup;

@@ -3,7 +3,7 @@ import Book from "../assets/Book.jpg";
 
 const About = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 pt-20 mb-10">
+    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 pt-20 mb-20">
       <div className="grid md:grid-cols-2 gap-10 items-center">
         {/* LEFT CONTENT */}
         <div className="space-y-6">
@@ -39,7 +39,7 @@ const About = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center md:justify-end size-25">
+        <div className="flex justify-center md:justify-end">
           <img
             src={Book}
             alt="Books Illustration"
